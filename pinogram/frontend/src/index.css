@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-dancing{
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rotate-anim{
+    animation: rotate linear infinite .1s;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+a.active {
+  color: rgb(220,38,37);
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}
